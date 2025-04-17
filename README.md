@@ -17,10 +17,10 @@ Este portfólio foi desenvolvido com o objetivo de apresentar minhas habilidades
 
 O portfólio é composto por [Mencione as principais seções do seu portfólio, por exemplo]:
 
-* **Página Inicial (Home):** Uma breve introdução sobre mim e meus objetivos.
-* **Projetos:** Uma seção dedicada a mostrar os projetos que desenvolvi, com detalhes sobre cada um.
-* **Sobre Mim:** Uma página com mais informações sobre minha trajetória, habilidades e paixões.
-* **Contato:** Informações para que as pessoas possam entrar em contato comigo.
+* **Página Inicial (Home):** 
+* **Projetos:** 
+* **Sobre Mim:** 
+* **Contato:** https://www.linkedin.com/in/karen0nogueira
 
 ## Projetos
 
@@ -58,3 +58,4 @@ Como estou em constante aprendizado, planejo adicionar as seguintes melhorias e 
 * [Explorar bibliotecas JavaScript para adicionar animações ou funcionalidades mais complexas.]
 
 Estou sempre aberta a novas oportunidades, feedbacks e conexões na área de desenvolvimento web.
+
