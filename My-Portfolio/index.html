@@ -3,19 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-     <link rel="shortcut icon" href="./assets/img/avatar.png" type="image/x-icon">
+     <link rel="shortcut icon" href="./assets/img/avatar_karen.png" type="image/x-icon">
+     <!-- FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
      <link rel="stylesheet" href="css/style.css">
      <script src="js/script.js"></script>
+     <!-- ICONS -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
      <title>Karen´s Personal Portfolio</title>
 </head>
 <body>
     <!-- SIDEBAR -->
-     
+     <aside class="side-bar" data-sidebar>
+        <div class="side-bar info">
+            <figure class="avatar-box">
+                <img src="./assets/img/avatar_karen.png" alt="Karen Nogueira avatar" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Karen Nogueira">Karen Nogueira</h1>
+
+                <p class="title">Web Developer</p>
+            </div>
+            <button class="info_more-btn" data-side-btn>
+                <span>Show Contacts</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+        </div>
+
+        <div class="sidebar-infor_more">
+            <div class="separator"></div>
+            <ul class="contacts-list">
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-info">Email</p>
+
+                        <a href="malito:karen0nogueira@gmail.com" class="contact-link">karen0nogueira@gmail.com</a>
+                    </div>
+                </li>
+
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon> 
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Phone</p>
+                        <a href="tel:+5561995903165" class="contact-link">(61) 99590-3165</a>
+                    </div>
+
+                </li>
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
+                        <address>Brasília, DF, Brazil</address>
+                    </div>
+                </li>
+               
+            </ul>
+            <div class="separator"></div>
+            <ul class="social-list">
+                <li class="social-list">
+                    <a href="https://www.linkedin.com/in/karen0nogueira/" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+     </aside>
 </body>
 
 </html><!--  -->
