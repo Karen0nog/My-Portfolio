@@ -98,6 +98,7 @@ input[type="submit"] {
     background-color: var(--neutral-3);
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -105,7 +106,12 @@ input[type="submit"]:hover {
     color: var(--white);
     transition: 0.3s;
     border: none;
+    transform: scale(1.1);
 
+}
+
+input[type="submit"]:active {
+    transform: scale(0.9);
 }
 
 a {
@@ -122,4 +128,3 @@ a {
 a:hover {
     color: var(--neutral-2);
 }
-
