@@ -1,0 +1,134 @@
+:root {
+  --bg-main: linear-gradient(to bottom right, #06063a 3%, #020324 97%);
+  --bg-sidebar: linear-gradient(to bottom right, #160741 3%, #0b022c 97%);
+  --border-gold: #ffc107a1;
+  --text-light: #e3e3e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  margin: 15px 12px;
+  margin-bottom: 75px;
+  min-width: 259px;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+img, ion-icon, a, button, time, span { display: block; }
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+.sidebar,
+article {
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--border-gold);
+  margin: 16px 0;
+}
+
+.icon-box {
+  background: var(--bg-sidebar);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--border-gold);
+}
+
+/* .icon-box::before */
+
+.icon-box ion-icon {
+  --ionicon-stroke-width: 35px;
+  color: var(--border-gold);
+}
+
+article.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.h2, .h3, .h4, .h5 {
+    color: var(--text-light);
+    text-transform: capitalize;
+}
+
+.h2 { font-size: 2rem; }
+.h3 { font-size: 1.5rem; }
+.h4 { font-size: 1.2rem; }
+.h5 { font-size: 1rem; font-weight: 500; }
+
+.article-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 7px;
+  gap: 4px; 
+}
+
+.article-title::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--border-gold);
+  border-radius: 3px;
+}
+
+.content-card {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  padding-top: 45px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+  
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  
+}
+
+/* SIDEBAR */
+
