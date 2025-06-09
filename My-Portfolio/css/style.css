@@ -9,17 +9,12 @@
   --shadow-1: #00000040;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-} */
 
 
 /* Cores do Tema Claro */
 :root {
   --light-background: #FFFFFF; /* Branco puro para o fundo principal */
-  --light-surface: #F8F8F8;    /* Cinza muito claro para superfícies e cards */
+  --light-surface: #f8f8f8;    /* Cinza muito claro para superfícies e cards */
   --light-text-primary: #333333; /* Texto principal escuro */
   --light-text-secondary: #666666; /* Texto secundário e detalhes */
   --light-accent: #0b3c70;     /* Azul vibrante para elementos de destaque/interativos */
@@ -85,24 +80,27 @@ img {
   margin: 1rem 0;
 }
 
+.layout-container {
+  display: flex;
+  height: 100vh;  
+  width: 100vw;    
+  overflow: hidden; 
+}
+
 /* Sidebar */
 .side-bar {
+  width: 33%;
+  /* min-width: 220px;
+  max-width: none; */
+  height: 100vh;
   background-color: var(--light-surface);
   box-shadow: 0 4px 10px var(--light-shadow);
   padding: 1.5rem;
-  width: 300px; /* Adjust as needed */
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow-y: auto;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.side-bar.active {
-  transform: translateX(0);
-}
 
 .side-bar.info {
   display: flex;
@@ -110,6 +108,19 @@ img {
   align-items: center;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+  
+.main-content {
+  width: 66.6667%;
+  min-width: 0;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  transition: none;
+
 }
 
 .avatar-box {
@@ -215,27 +226,6 @@ img {
   color: var(--light-accent);
 }
 
-/* Main Content */
-.main-content {
-  margin-left: 300px; /* To make space for the fixed sidebar */
-  padding: 2rem;
-  transition: margin-left 0.3s ease-in-out;
-}
-
-/* Adjust main content when sidebar is hidden/collapsed on smaller screens */
-@media (max-width: 768px) {
-  .side-bar {
-    transform: translateX(-100%);
-  }
-
-  .side-bar.active {
-    transform: translateX(0);
-  }
-
-  .main-content {
-    margin-left: 0;
-  }
-}
 
 /* Navbar */
 .navbar {

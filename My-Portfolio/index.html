@@ -1,271 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-     <link rel="shortcut icon" href="./assets/img/avatar_karen.png" type="image/x-icon">
-     <!-- FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- LINKS -->
-     <link rel="stylesheet" href="css/style.css">
-     <script src="js/script.js"></script>
-     <!-- ICONS -->
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/avatar_karen.png"
+      type="image/x-icon"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINKS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-     <title>Portfólio Karen Nogueira</title>
-</head>
+    <title>Portfólio Karen Nogueira</title>
+  </head>
 
-<body>
-    <!-- SIDEBAR -->
-     <aside class="side-bar" data-sidebar>
+  <body>
+    <div class="layout-container">
+      <!--SIDE BAR-->
+      <aside class="side-bar">
         <div class="side-bar info">
-            <figure class="avatar-box">
-                <img src="./assets/img/avatar_karen.png" alt="Karen Nogueira avatar" width="80">
-            </figure>
+          <figure class="avatar-box">
+            <img
+              src="./assets/img/avatar_karen.png"
+              alt="Karen Nogueira avatar"
+              width="80"
+            />
+          </figure>
 
-            <div class="info-content">
-                <h1 class="name" title="Karen Nogueira">Karen Nogueira</h1>
-                <p class="title">Web Developer</p>
-            </div>
-            <button class="info_more-btn" data-side-btn>
-                <span>Mostrar Contato</span>
-                <ion-icon name="chevron-down"></ion-icon>
-            </button>
+          <div class="info-content">
+            <h1 class="name" title="Karen Nogueira">Karen Nogueira</h1>
+            <p class="title">Web Developer</p>
+          </div>
+          <button class="info_more-btn" data-side-btn>
+            <span>Mostrar Contato</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <div class="sidebar-infor_more">
-            <div class="separator"></div>
-            <ul class="contacts-list">
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </div>
+              <div class="contact-info">
+                <p class="contact-info">E-mail</p>
 
-                    <div class="contact-info">
-                        <p class="contact-info">E-mail</p>
+                <a href="mailto:karen0nogueira@gmail.com" class="contact-link"
+                  >karen0nogueira@gmail.com</a
+                >
+              </div>
+            </li>
 
-                        <a href="malito:karen0nogueira@gmail.com" class="contact-link">karen0nogueira@gmail.com</a>
-                    </div>
-                </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="phone-portrait-outline"></ion-icon> 
-                    </div>
+              <div class="contact-info">
+                <p class="contact-title">Telefone</p>
+                <a href="tel:+5561995903165" class="contact-link"
+                  >(61) 99590-3165</a
+                >
+              </div>
+            </li>
 
-                    <div class="contact-info">
-                        <p class="contact-title">Telefone</p>
-                        <a href="tel:+5561995903165" class="contact-link">(61) 99590-3165</a>
-                    </div>
-                </li>
-
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
-                    <div class="contact-info">
-                        <p class="contact-title">Localização</p>
-                        <address>Brasília, DF, Brazil</address>
-                    </div>
-                </li>
-               
-            </ul>
-            <div class="separator"></div>
-            <ul class="social-list">
-                <li class="social-list">
-                    <a href="https://www.linkedin.com/in/karen0nogueira/" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-            </ul>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Localização</p>
+                <address>Brasília, DF, Brazil</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/karen0nogueira/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </div>
-     </aside>
+      </aside>
 
-<div class="main-content"></div>
+      <!-- NAVBAR -->
 
-<!-- NAVBAR -->
- <nav class="navbar">
-    <ul class="navbar-list">
-        <li class="navbar-item" >
-            <button class="navbar-link active" data-nav-link>Sobre</button>
-        </li>
-         <li class="navbar-item">
-            <button class="navbar-link">Currículo</button>
-        </li>
-         <li class="navbar-item">
-            <button class="navbar-link">Portfólio</button>
-        </li>
-         <li class="navbar-item">
-            <button class="navbar-link">Contato</button>
-        </li>
-    </ul>
- </nav>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Sobre</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link">Currículo</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link">Portfólio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link">Contato</button>
+            </li>
+          </ul>
+        </nav>
 
-<!-- ABOUT -->
-<article class="about active" data-page="about">
-    <header>
-        <h2 class="h2 article-title">Sobre mim</h2>
-    </header>
+        <!-- ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">Sobre mim</h2>
+          </header>
 
-    <section class="about me">
-        <p>
-           Mudança, Aprendizado e Inovação: Minha Jornada na Tecnologia como Desenvolvedora FullStack
-        </p>
-        <p>
-            Desenvolvedora em formação, apaixonada por tecnologia e em busca da minha primeira oportunidade no mercado. 
-            Meu objetivo é aplicar meus conhecimentos em projetos inovadores e desafiadores. Tenho grande interesse em desenvolvimento FullStack 
-            e estou disposta a aprender e me adaptar às necessidades da equipe. Sou proativa e dedicada, com facilidade para aprender novas tecnologias 
-            e linguagens, sempre buscando aprimoramento profissional.
-         <br><br>
-            Após muitos anos atuando na área da moda, decidi trilhar um novo caminho profissional na tecnologia. Desde minha mudança para Brasília em 2022, 
-            venho me dedicando intensamente a estudos independentes e cursos especializados, aprimorando minhas habilidades para ingressar no mercado. 
-            Agora, estou pronta para aplicar meus conhecimentos em um estágio e contribuir para projetos inovadores.   
-        </p>
-    </section>
+          <section class="about me">
+            <p>
+              Mudança, Aprendizado e Inovação: Minha Jornada na Tecnologia como
+              Desenvolvedora FullStack
+            </p>
+            <p>
+              Desenvolvedora em formação, apaixonada por tecnologia e em busca
+              da minha primeira oportunidade no mercado. Meu objetivo é aplicar
+              meus conhecimentos em projetos inovadores e desafiadores. Tenho
+              grande interesse em desenvolvimento FullStack e estou disposta a
+              aprender e me adaptar às necessidades da equipe. Sou proativa e
+              dedicada, com facilidade para aprender novas tecnologias e
+              linguagens, sempre buscando aprimoramento profissional.
+              <br /><br />
+              Após muitos anos atuando na área da moda, decidi trilhar um novo
+              caminho profissional na tecnologia. Desde minha mudança para
+              Brasília em 2022, venho me dedicando intensamente a estudos
+              independentes e cursos especializados, aprimorando minhas
+              habilidades para ingressar no mercado. Agora, estou pronta para
+              aplicar meus conhecimentos em um estágio e contribuir para
+              projetos inovadores.
+            </p>
+          </section>
 
-<!-- service -->
-    <section class="service">
-        <h3 class="h3 service-title">O que estou fazendo</h3>
-        <ul class="service-list">
-            
-           <li class="service-item">
-            <div class="service-icon-box">
-                <img src="./assets/coding-icon.svg" alt="Web Development icon" width="40">
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
-                <p class="service-item-text">
+          <!-- service -->
+          <section class="service">
+            <h3 class="h3 service-title">O que estou fazendo</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/coding-icon.svg"
+                    alt="Web Development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
                     Desenvolvimento de sites de alta qualidade.
-                </p>
-            </div>
-           </li>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-        </ul>
-    </section>
-</article>
+        <!-- RESUME -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Currículo</h2>
+          </header>
 
-<!-- RESUME -->
- <article class="resume" data-page="resume">
-    <header>
-        <h2 class="h2 article-title">Currículo</h2>
-    </header>
-
-    <section class="timeline">
-        <div class="title-wrapper">
-            <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>"
-            </div>
-            <h3 class="h3">Educação</h3>
-        </div>
-
-        <ol class="timeline-list">
-
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Faculdade de Tecnologia e Inovação Senac DF</h4>
-            <span>2024 - 2026</span>
-            <p class="timeline-text">
-                Graduação em Análise e Desenvolvimento de Sistemas
-            </p>
-            </li>
-
-             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Escola Senai Francisco Matarazzo</h4>
-            <span>2015 - 2016</span>
-            <p class="timeline-text">
-                Pós-Graduação em Design de Moda
-            </p>
-            </li>
-
-             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Universidade Paulista</h4>
-            <span>2010 - 2012</span>
-            <p class="timeline-text">
-                Graduação em Design de Moda
-            </p>
-            </li>
-
-        </ol>
-
-    </section>
-
-    <section class="timeline">
-        <div class="title-wrapper">
-            <div class="icon-box">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
                 <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Educação</h3>
             </div>
-            <h3 class="h3">Experiências</h3>
-        </div>
 
-        <ol class="timeline-list">
-            
-            <li class="timeline-item">
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Faculdade de Tecnologia e Inovação Senac DF
+                </h4>
+                <span>2024 - 2026</span>
+                <p class="timeline-text">
+                  Graduação em Análise e Desenvolvimento de Sistemas
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Escola Senai Francisco Matarazzo
+                </h4>
+                <span>2015 - 2016</span>
+                <p class="timeline-text">Pós-Graduação em Design de Moda</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Universidade Paulista</h4>
+                <span>2010 - 2012</span>
+                <p class="timeline-text">Graduação em Design de Moda</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experiências</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Costureira</h4>
                 <span>2014 - 2020</span>
                 <p class="timeline-text">
-                    Rotina administrativa, atendimento ao cliente e costureira de ajustes e reformas.
-                    Trabalho em equipe, pontualidade, proatividade , comunicação e resolução de problemas.
+                  Rotina administrativa, atendimento ao cliente e costureira de
+                  ajustes e reformas. Trabalho em equipe, pontualidade,
+                  proatividade , comunicação e resolução de problemas.
                 </p>
-            </li>
-        </ol>
-        
-    </section>
+              </li>
+            </ol>
+          </section>
 
-    <section class="skill">
-        <h3 class="h3 skills-title">Habilidades</h3>
+          <section class="skill">
+            <h3 class="h3 skills-title">Habilidades</h3>
 
-        <ul class="skills-list content-card">
-
-            <li class="skills-item">
+            <ul class="skills-list content-card">
+              <li class="skills-item">
                 <div class="title-wrapper">
-                    <h5 class="h5">HTML</h5>
-                    <data value="50">50%</data>
+                  <h5 class="h5">HTML</h5>
+                  <data value="50">50%</data>
                 </div>
                 <div class="skills-progress-bg">
-                    <div class="skills-progress-fill" style="width: 80%;"></div>
+                  <div class="skills-progress-fill" style="width: 80%"></div>
                 </div>
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
                 <div class="title-wrapper">
-                    <h5 class="h5">CSS</h5>
-                    <data value="50">50%</data>
+                  <h5 class="h5">CSS</h5>
+                  <data value="50">50%</data>
                 </div>
                 <div class="skills-progress-bg">
-                    <div class="skills-progress-fill" style="width: 80%;"></div>
+                  <div class="skills-progress-fill" style="width: 80%"></div>
                 </div>
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
                 <div class="title-wrapper">
-                    <h5 class="h5">JavaScript</h5>
-                    <data value="50">50%</data>
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="50">50%</data>
                 </div>
                 <div class="skills-progress-bg">
-                    <div class="skills-progress-fill" style="width: 80%;"></div>
+                  <div class="skills-progress-fill" style="width: 80%"></div>
                 </div>
-            </li>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
                 <div class="title-wrapper">
-                    <h5 class="h5">React</h5>
-                    <data value="50">50%</data>
+                  <h5 class="h5">React</h5>
+                  <data value="50">50%</data>
                 </div>
                 <div class="skills-progress-bg">
-                    <div class="skills-progress-fill" style="width: 80%;"></div>
+                  <div class="skills-progress-fill" style="width: 80%"></div>
                 </div>
-            </li>
+              </li>
+            </ul>
+          </section>
 
-        </ul>
+          <!-- PORTFOLIO -->
+        </article>
+      </div>
 
-    </section>
-
-<!-- PORTFOLIO -->
-
- </article>
-</body>
-
-</html><!--  -->
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
+<!--  -->
