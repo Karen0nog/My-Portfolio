@@ -85,20 +85,25 @@ img {
   height: 100vh;  
   width: 100vw;    
   overflow: hidden; 
+  
+
 }
 
 /* Sidebar */
 .side-bar {
-  width: 33%;
-  /* min-width: 220px;
-  max-width: none; */
+  width: 33.3333%;
+  min-width: 260px;
+  max-width: 480px;
   height: 100vh;
   background-color: var(--light-surface);
   box-shadow: 0 4px 10px var(--light-shadow);
-  padding: 1.5rem;
+  padding: 2rem;
+  ;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  margin: 2rem;
 }
 
 
@@ -114,12 +119,13 @@ img {
   width: 66.6667%;
   min-width: 0;
   height: 100vh;
-  padding: 2rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   transition: none;
+  box-sizing: border-box;
 
 }
 
@@ -465,17 +471,13 @@ article {
   border-radius: 5px;
 }
 
-/* Basic responsiveness */
-@media (max-width: 1024px) {
-  .side-bar {
-    width: 250px;
-  }
-
+/* <--ARRUMAR RESPOSIVIDADE--> */
+@media (max-width: 768px) {
+  .side-bar,
   .main-content {
-    margin-left: 250px;
+    padding: 1rem;
   }
 }
-
 @media (max-width: 768px) {
   .side-bar {
     width: 100%;
