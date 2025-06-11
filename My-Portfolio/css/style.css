@@ -94,14 +94,13 @@ img {
   width: 33.3333%;
   min-width: 260px;
   max-width: 480px;
-  height: 100vh;
   background-color: var(--light-surface);
   box-shadow: 0 4px 10px var(--light-shadow);
   padding: 2rem;
-  ;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; 
   box-sizing: border-box;
   margin: 2rem;
 }
@@ -112,14 +111,11 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
   
 .main-content {
   width: 66.6667%;
   min-width: 0;
-  height: 100vh;
-  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,7 +131,9 @@ img {
 
 .avatar-box img {
   border-radius: 50%;
-  border: 4px solid var(--light-accent);
+  border: 2px solid var(--light-accent);
+  width: 150px;
+
 }
 
 .side-bar .name {
@@ -270,7 +268,6 @@ article {
   box-shadow: 0 4px 10px var(--light-shadow);
   border-radius: 8px;
   padding: 2rem;
-  margin-bottom: 2rem;
 }
 
 /* About Section */
